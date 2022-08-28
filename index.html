@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="Imagenes/Logo.png" alt="Logo de Alura." />
+      <h2 style="margin-left: 80px; font-weight: 600">
+        Desafío Alura/Oracle - Encriptador de Texto
+      </h2>
+    </header>
+    <main class="main">
+      <section>
+        <textarea
+          class="input-texto"
+          clos="40"
+          rows="6"
+          placeholder="Ingrese su texto aqui"
+        ></textarea>
+
+        <div id="div-desaparece">
+          <h6 class="informacion">
+            Emplear solo letras minusculas y omitir los acentos ortograficos,
+            gracias.
+          </h6>
+        </div>
+
+        <div class="botones">
+          <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="mensaje-box">
+        <textarea class="mensaje" cols="12" rows="10"></textarea>
+        <h3>Ingresa el texto que deseas encriptar o desencriptar.</h3>
+        <button class="copiar" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/deivy-cuatin-osorio/" target="_blank"
+        ><img src="Imagenes/linkedin.png" alt=""
+      /></a>
+      <a href="https://github.com/Dcuos" target="_blank"
+        ><img src="Imagenes/github.png" alt=""
+      /></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
